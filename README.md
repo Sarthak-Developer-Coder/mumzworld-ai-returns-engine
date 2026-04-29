@@ -83,12 +83,12 @@ python -m mumzworld_ai.evals.run
 
 ```mermaid
 flowchart LR
-  A[Customer message\nEN or AR] --> B[Language detect]
-  B --> C[Retrieve policy chunks\nBM25 over markdown]
-  C --> D[LLM generates strict JSON\n(+ asks follow-ups)]
+  A[Customer message<br/>EN or AR] --> B[Language detect]
+  B --> C[Retrieve policy chunks<br/>BM25 over markdown]
+  C --> D[LLM generates strict JSON<br/>asks follow-ups]
   D --> E[Parse + Pydantic validate]
-  E --> F[Grounding checks\n(drop bad quotes, warn)]
-  F --> G[Deterministic action layer\n(auto_* vs escalate)]
+  E --> F[Grounding checks<br/>drop bad quotes, warn]
+  F --> G[Deterministic action layer<br/>auto_* vs escalate]
   G --> H[TriageResult JSON]
 ```
 
