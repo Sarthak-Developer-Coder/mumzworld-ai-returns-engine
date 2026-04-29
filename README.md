@@ -10,8 +10,8 @@ An AI system that **classifies, decides, and safely executes return actions** (r
 
 ## Submission checklist (fill in)
 - Track: **A — AI Engineering Intern**
-- GitHub repo link: <add link before submission>
-- 3-minute Loom walkthrough: <add link before submission>
+- GitHub repo link: https://github.com/Sarthak-Developer-Coder/mumzworld-ai-returns-engine.git
+- 3-minute Loom walkthrough: https://www.loom.com/share/efe9960256f6485ca1f2762c1589bc74
 
 This repo is set up to run end-to-end from a fresh clone in under 5 minutes using the included `.venv` or by creating a new virtualenv and installing `requirements.txt`.
 
