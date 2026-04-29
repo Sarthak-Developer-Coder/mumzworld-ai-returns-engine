@@ -8,7 +8,7 @@ An AI system that **classifies, decides, and safely executes return actions** (r
 >
 > A lightweight internal copilot for Mumzworld customer support that takes a free-text return request (English or Arabic) plus optional order context, retrieves relevant return-policy snippets (RAG), and produces a **strictly validated JSON** decision: predicted **intent** (**refund / exchange / store_credit / escalate**) plus a deterministic **action** plan (**auto_refund / auto_exchange / issue_store_credit / escalate**) with `requires_human`, confidence + uncertainty flags, follow-up questions when information is missing, and a customer-ready reply in the same language with policy-grounded evidence.
 
-## Submission checklist (fill in)
+## Submission checklist 
 - Track: **A — AI Engineering Intern**
 - GitHub repo link: https://github.com/Sarthak-Developer-Coder/mumzworld-ai-returns-engine.git
 - 3-minute Loom walkthrough: https://www.loom.com/share/efe9960256f6485ca1f2762c1589bc74
@@ -124,11 +124,6 @@ python -m mumzworld_ai.cli --message "I received the wrong item, please exchange
 python -m mumzworld_ai.cli --message "وصلني المنتج مكسور" --language ar --context '{"order_id":"MW-123"}'
 ```
 
-## Loom walkthrough script (3 minutes)
-1) Run `python -m mumzworld_ai.demo` (shows 5 cases end-to-end).
-2) Point out one case that is ambiguous and asks follow-ups.
-3) Point out the refusal case (medical) and how it escalates.
-4) Run `python -m mumzworld_ai.evals.run` and show the summary + `mumzworld_ai/evals/out/report.md`.
 
 ## Evals
 The eval harness is intentionally lightweight and repeatable.
@@ -178,12 +173,12 @@ See `EVALS.md` for the rubric and results.
 - This is an internal-tool prototype intended to assist an agent; it should not be customer-facing without additional safeguards and real policy integration.
 - Time spent on this submission was approximately 5 hours, concentrated on the retrieval+schema pipeline, deterministic action layer, eval harness, and submission polish.
 
-## AI usage note (max 5 lines)
+## AI usage note 
 - OpenRouter + a multilingual instruct model for structured triage + response drafting.
 - GitHub Copilot Chat (GPT-5.2) for code scaffolding and iterative refactors.
 - Automated eval harness for schema/label/refusal checks; manual spot-checking for Arabic naturalness.
 
-## Time log (max 5 lines)
+## Time log 
 - 1.0h: problem selection + policy/data design (synthetic)
 - 2.0h: core pipeline (retrieval + schema + LLM + validation)
 - 1.0h: demo + eval harness + adversarial cases
