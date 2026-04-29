@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.pkl
+*.log
+
+# Environments
+.venv/
+venv/
+ENV/
+.env
+
+# OS / editor
+.DS_Store
+.vscode/
+
+# Outputs
+mumzworld_ai/evals/out/
