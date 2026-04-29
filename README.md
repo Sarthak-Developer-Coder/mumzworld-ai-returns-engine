@@ -4,7 +4,6 @@ An AI system that **classifies, decides, and safely executes return actions** (r
 
 ## Submission status
 
-> **One-paragraph summary**
 >
 > A lightweight internal copilot for Mumzworld customer support that takes a free-text return request (English or Arabic) plus optional order context, retrieves relevant return-policy snippets (RAG), and produces a **strictly validated JSON** decision: predicted **intent** (**refund / exchange / store_credit / escalate**) plus a deterministic **action** plan (**auto_refund / auto_exchange / issue_store_credit / escalate**) with `requires_human`, confidence + uncertainty flags, follow-up questions when information is missing, and a customer-ready reply in the same language with policy-grounded evidence.
 
